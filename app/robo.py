@@ -1,4 +1,7 @@
 
+
+# import our format_usd function from shopping
+
 import os
 import json
 from dotenv import load_dotenv
