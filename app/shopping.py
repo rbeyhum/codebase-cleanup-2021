@@ -27,6 +27,7 @@ def lookup_product(product_id, all_products):
         return matching_products[0]
     else:
         return None
+
 # PREVENT ALL THE APP CODE FROM BEING IMPORTED
 # BUT STILL BE ABLE TO RUN IT FROM THE COMMAND LINE LIKE THIS...
 
