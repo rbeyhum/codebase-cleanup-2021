@@ -16,6 +16,12 @@ def format_usd(my_price):
     return f"${my_price:,.2f}"
 
 
+def lookup_product(product_id, all_products):
+    """
+    Params :
+        products_id (str) like "8"
+        all_products (list of dictionaries) each dict should have "id", "name", "department", "aisle", and "price" attribiutes:
+    """
 
 # PREVENT ALL THE APP CODE FROM BEING IMPORTED
 # BUT STILL BE ABLE TO RUN IT FROM THE COMMAND LINE LIKE THIS...
