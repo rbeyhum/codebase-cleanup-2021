@@ -20,6 +20,8 @@ request_url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&sym
 response = requests.get(request_url)
 parsed_response = json.loads(response.text)
 
+## extra comment 
+
 # PROCESS DATA
 
 records = []
