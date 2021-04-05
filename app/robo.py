@@ -9,6 +9,8 @@ import requests
 from pandas import DataFrame
 import plotly.express as px
 
+from app.number_decorators import format_usd
+
 load_dotenv()
 
 API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="abc123")
