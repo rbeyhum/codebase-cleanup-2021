@@ -48,7 +48,7 @@ if __name__ == "__main__":
         if selected_id.upper() == "DONE":
             break
         else:
-            matching_product = lookup_product(selectecd_id, products)
+            matching_product = lookup_product(selected_id, products)
             if matching_product:
                 selected_products.append(matching_product)
             else:
