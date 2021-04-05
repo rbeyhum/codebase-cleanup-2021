@@ -4,17 +4,18 @@ from pandas import read_csv
 
 
 
-def format_usd(my_price):
-    """
-    Formats a number as USD with dollar sign and two decimals (and also thousands separator)
+#def format_usd(my_price):
+#    """
+#    Formats a number as USD with dollar sign and two decimals (and also thousands separator)
+#
+#    Params: my_price is a number (int or float) that we want to format
+#
+#    Examples: format_usd(10)
+#    """
+#
+#    return f"${my_price:,.2f}"
 
-    Params: my_price is a number (int or float) that we want to format
-
-    Examples: format_usd(10)
-    """
-
-    return f"${my_price:,.2f}"
-
+from app.number_decorators import format_usd
 
 def lookup_product(product_id, all_products):
     """
@@ -48,7 +49,7 @@ if __name__ == "__main__":
         if selected_id.upper() == "DONE":
             break
         else:
-            matching_product = lookup_product(selectecd_id, products)
+            matching_product = lookup_product(selected_id, products)
             if matching_product:
                 selected_products.append(matching_product)
             else:
